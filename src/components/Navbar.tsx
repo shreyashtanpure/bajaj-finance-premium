@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Menu, X, ExternalLink, ChevronRight, Download, Sparkles } from 'lucide-react';
+import { Search, Menu, X, ExternalLink, ChevronRight } from 'lucide-react';
 
 interface NavbarProps {
   onOpenSearch: () => void;
@@ -94,17 +94,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
               </kbd>
             </button>
 
-            {/* Direct Download ZIP Button for Git */}
-            <a
-              href="/bajaj-finance-premium.zip"
-              download="bajaj-finance-premium.zip"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 rounded-xl shadow-md shadow-emerald-900/30 transition-all hover:scale-105"
-              title="Download clean project ZIP ready for GitHub"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Git ZIP</span>
-            </a>
-
             {/* Official Portal CTA */}
             <a
               href="https://www.bajajfinserv.in"
@@ -143,14 +132,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
                 </a>
               ))}
               <div className="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
-                <a
-                  href="/bajaj-finance-premium.zip"
-                  download="bajaj-finance-premium.zip"
-                  className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-bold bg-emerald-600 text-white rounded-xl shadow"
-                >
-                  <Download className="w-4 h-4" />
-                  <span>Download Git-Ready ZIP File</span>
-                </a>
                 <button
                   onClick={() => {
                     setMobileMenuOpen(false);

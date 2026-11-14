@@ -1,13 +1,11 @@
 import React from 'react';
-import { 
-  ArrowUp, 
-  ExternalLink, 
-  ShieldAlert, 
-  PhoneCall, 
-  Building2, 
-  Lock, 
-  Sparkles,
-  Download,
+import {
+  ArrowUp,
+  ExternalLink,
+  ShieldAlert,
+  PhoneCall,
+  Building2,
+  Lock,
   HelpCircle,
   FileCheck2
 } from 'lucide-react';
@@ -19,7 +17,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-[#010611] border-t border-white/10 text-slate-400 text-xs">
-      
+
       {/* Top Pre-Footer Official Callout Banner */}
       <div className="border-b border-white/5 bg-gradient-to-r from-[#001428] via-[#002855] to-[#001428] py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -33,16 +31,6 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            {/* Direct Download ZIP Button */}
-            <a
-              href="/bajaj-finance-premium.zip"
-              download="bajaj-finance-premium.zip"
-              className="px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs flex items-center gap-2 shadow-lg shadow-emerald-900/40 transition-transform hover:scale-105"
-            >
-              <Download className="w-4 h-4" />
-              <span>Download Git-Ready ZIP</span>
-            </a>
-
             <a
               href="https://www.bajajfinserv.in"
               target="_blank"
@@ -69,7 +57,7 @@ export const Footer: React.FC = () => {
       {/* Main Footer Links Columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-14">
-          
+
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5">
@@ -228,14 +216,6 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="/bajaj-finance-premium.zip"
-              download="bajaj-finance-premium.zip"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-600/50 transition-colors"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Download Git ZIP</span>
-            </a>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white transition-colors"

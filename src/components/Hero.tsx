@@ -2,14 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   ArrowRight, 
-  ExternalLink, 
   Calculator, 
   ShieldCheck, 
   Award, 
   Users, 
   Building2, 
-  Download,
-  Sparkles,
   ChevronDown
 } from 'lucide-react';
 import { Phone3DCanvas } from './Phone3DCanvas';
@@ -96,17 +93,6 @@ export const Hero: React.FC = () => {
               >
                 <Calculator className="w-4 h-4 text-[#38bdf8]" />
                 <span>EMI Calculator</span>
-              </a>
-
-              {/* Direct Download ZIP Button for Git */}
-              <a
-                href="/bajaj-finance-premium.zip"
-                download="bajaj-finance-premium.zip"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-900/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
-                title="Download clean repository ZIP ready for GitHub"
-              >
-                <Download className="w-4 h-4" />
-                <span>Download Git ZIP</span>
               </a>
             </motion.div>
 
